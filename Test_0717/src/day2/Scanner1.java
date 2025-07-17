@@ -11,7 +11,7 @@ public class Scanner1 {
 		int num1 = s.nextInt();
 		System.out.print("이름을 입력해 주세요 : ");
 		String name = s.next();
-		
+		 
 		
 		System.out.println("입력한 숫자 : " + num1);
 		System.out.println("입력한 이름 : " + name);
