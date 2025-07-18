@@ -13,18 +13,26 @@ public class UpAndDown {
 		System.out.println("Up & Down Game Start");
 		int x = ran.nextInt(100) + 1;
 		int count = 0;
+		int max = 100;
+		int min = 1;
 		while(true) {
 			System.out.print("숫자 입력 : ");
 			int ans = s.nextInt();
-			if(ans > 100 || ans < 0) {
-				System.out.println("잘못된 입력입니다. 다시 입력하세요");
+			if(ans >= max || ans <= min) {
+				System.out.println(min + "부터 " + max + "까지의 수를 입력해 주세요.");
 				continue;
 			}
 			count++;
-			if(x > ans)
+				
+			if(x > ans) {
 				System.out.println("Up");
-			else if(x < ans)
+				min = ans + 1;
+			}
+			else if(x < ans) {
 				System.out.println("Down");
+				max = ans - 1;
+			}
+	
 			else{
 				System.out.println("정답입니다!");
 				break;
