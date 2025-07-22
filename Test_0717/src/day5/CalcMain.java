@@ -14,6 +14,12 @@ public class CalcMain {
 		int max = calc.max(5, 8);
 		
 		System.out.println(max);
+		
+		int arrrr[] = {3,5,1,4,2};
+		int arrSum = calc.arrSum(arrrr);
+		
+		calc.intro2("홍길동", 30, 170.9);
+		System.out.println(arrSum);
 	}
 
 }
