@@ -22,7 +22,7 @@ public class FoodMain {
 		// TODO Auto-generated method stub
 		
 		Pizza pizza = new Pizza("불고기 피자");
-		System.out.println(pizza);
+		System.out.println(pizza.toString());
 		
 //		Food f = pizza;
 //		foodBoxing(pizza);
