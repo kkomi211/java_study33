@@ -30,10 +30,8 @@ public class TestTest {
 
 		System.out.print("인원수 입력 : ");
 		int human = s.nextInt();
-		int sum;
 		for (int i = 0; i < human; i++) {
 			HashMap<String, Object> student = new HashMap<>();
-			sum = 0;
 			System.out.print("이름 >> ");
 			String name = s.next();
 			student.put("name", name);
@@ -42,11 +40,13 @@ public class TestTest {
 			student.put("oracle",scoreFunc("오라클", 35));
 			student.put("html",scoreFunc("html", 25));
 			
+			testscore.add(student);
 			System.out.println("--------------------------------------------------");
 		}
 		
+		
 		for(int i=0; i<human; i++) {
-			sum = (int)testscore.get(i).get("java") + (int)testscore.get(i).get("oracle") + (int)testscore.get(i).get("html");
+			int sum = (int)testscore.get(i).get("java") + (int)testscore.get(i).get("oracle") + (int)testscore.get(i).get("html");
 			System.out.println("이름 : " + testscore.get(i).get("name") + ", 총점 : " + sum);
 		}
 
