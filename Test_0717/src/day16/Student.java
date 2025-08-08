@@ -9,7 +9,7 @@ public class Student extends Human {
 	// 2. name, age, height, stuNo를 받아서 초기화 해주는 생성자 만들기
 	// 3. 코드가 오류가 발생하지 않도록 작성하기
 	// 기타. 메소드의 구현이 필요할 경우 메소드 내용이나 문구는 자유롭게 할 것
-	Student(String name, int age, String gender, double height, int stuNo) {
+	public Student(String name, int age, String gender, double height, int stuNo) {
 		super(name, age, height, gender);
 		this.stuNo = stuNo;
 	}
